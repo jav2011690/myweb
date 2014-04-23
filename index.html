@@ -1,16 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8"/>
-		<title>HelloWorld</title>
-		<script type="text/javascript">
-			function hello() {
-				alert("你好");
-			}
-		</script>
-	</head>
-	<body>
-		<!--<button onclick="click();">点击</button>-->
-		<input type="button" value="click" onclick="hello()"> 
-	</body>
-</html>	
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>像素鸟</title>
+    <style>
+        canvas {
+            border: 1px dotted blue;
+            background: rgb(190, 221, 233);
+        }
+
+        #number {
+            position: absolute;
+            left: 650px;
+            top: 10px;
+            color: #5cba55;
+            font-size: 64px;
+        }
+
+        #images {
+            display: none;
+        }
+    </style>
+</head>
+<body align="center">
+<!--<body>-->
+<canvas id="canvas" width="350" height="500"></canvas>
+<div id="number">0</div>
+<div id="images">
+    <img src="images/bird_2.png" id="bird">
+    <img src="images/obstopsmall1.png" id="obstop">
+    <img src="images/obsbottomsmall1.png" id="obsbottom">
+    <img src="images/beijing1.jpg" id="background">
+</div>
+
+<script type="text/javascript" src="js/FBC.js"></script>
+<script type="text/javascript" src="js/Key.js"></script>
+<script type="text/javascript" src="js/Bird.js"></script>
+<script type="text/javascript" src="js/Pipe.js"></script>
+<script type="text/javascript" src="js/Obstacle.js"></script>
+<script type="text/javascript" src="js/Background.js"></script>
+<script type="text/javascript" src="js/Manager.js"></script>
+<script type="text/javascript" src="js/Main.js"></script>
+</body>
+</html>
